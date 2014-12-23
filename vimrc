@@ -2,6 +2,8 @@ if v:lang =~ "utf8$" || v:lang =~ "UTF-8$"
    set fileencodings=utf-8,latin1
 endif
 
+let NERDTreeDirArrows  = 0
+
 execute pathogen#infect()
 
 
