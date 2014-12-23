@@ -3,6 +3,7 @@ if v:lang =~ "utf8$" || v:lang =~ "UTF-8$"
 endif
 
 let NERDTreeDirArrows  = 0
+au VimEnter *  NERDTree
 
 execute pathogen#infect()
 
