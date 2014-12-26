@@ -25,6 +25,17 @@ set viminfo='20,\"50	" read/write a .viminfo file, don't store more
 set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 
+map <C-s> :w<CR>
+imap <C-s> <C-o>:w<CR>
+"stop use arrow keys it's wrong in vim 
+inoremap  <Up>     <NOP>
+inoremap  <Down>   <NOP>
+inoremap  <Left>   <NOP>
+inoremap  <Right>  <NOP>
+noremap   <Up>     <NOP>
+noremap   <Down>   <NOP>
+noremap   <Left>   <NOP>
+noremap   <Right>  <NOP>
 " Only do this part when compiled with support for autocommands
 if has("autocmd")
   " In text files, always limit the width of text to 78 characters
