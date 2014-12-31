@@ -5,6 +5,8 @@ endif
 let NERDTreeDirArrows  = 0
 "au VimEnter *  NERDTree
 
+filetype plugin on
+
 execute pathogen#infect()
 
 
